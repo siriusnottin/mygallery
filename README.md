@@ -10,8 +10,6 @@ One week, three photos that summarize the latest news.
 
 I used my actual knowledge in development and that I acquired by the workshop on the first day with HTML, CSS (SASS) and JavaScript.
 
-This is my first project using React.
-
 ### The web design
 
 I made the [interface with Figma](https://www.figma.com/file/E3dKgosEeflZCEPVOkWIbr9Y/jsforwp-conf-workshop-2020?node-id=1%3A2) and the animations was designed [using ProtoPie](https://share.protopie.io/aiVA4d3StFW).
@@ -23,6 +21,7 @@ I made the [interface with Figma](https://www.figma.com/file/E3dKgosEeflZCEPVOkW
 These are the modifications I want to apply to my project in the near future:
 
 - Use of React
+- Use of webpack and Yarn instead of gulp and npm
 - Create a WordPress plugin
 - Instead of using fake pictures, use an [real API](https://api.ap.org/media/v/docs/api/) to automatically grab actual pictures.
 - Build the newsletter for real
