@@ -38,6 +38,8 @@ I would love to exchange about this! Without your comments, I could'nt be a bett
 
 ### **Dependencies**
 
+From the docs of [Gulp Boilerplate](https://github.com/cferdinandi/gulp-boilerplate):
+
 ***Note:** if you've previously installed Gulp globally, run `npm rm --global gulp` to remove it. [Details here.](https://medium.com/gulpjs/gulp-sips-command-line-interface-e53411d4467)*
 
 Make sure these are installed first.
@@ -46,8 +48,6 @@ Make sure these are installed first.
 - [Gulp Command Line Utility](http://gulpjs.com/) `npm install --global gulp-cli`
 
 ### Quick Start
-
-From the docs of [Gulp Boilerplate](https://github.com/cferdinandi/gulp-boilerplate):
 
 1. In bash/terminal/command line, `cd` into your project directory.
 2. Run `npm install` to install required files and dependencies.
