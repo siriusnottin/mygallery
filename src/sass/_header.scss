@@ -1,0 +1,22 @@
+header {
+	padding: 2%;
+
+	.center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.logo {
+
+			img {
+				margin: 0;
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	.week-date {
+		font-size: rem(12px);
+		line-height: $paragraph-line-height;
+	}
+}

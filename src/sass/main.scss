@@ -1,0 +1,48 @@
+// Base styles
+@import "components/base";
+
+// Header
+@import "header";
+
+// Gallery
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 20%);
+	grid-column-gap: 2%;
+
+	img {
+
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+// Overlay
+#overlay {
+	background: #00000080;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+
+	figure {
+		background: #fff;
+		padding: 2px;
+		z-index: 200;
+
+		img {
+			display: block;
+			max-width: 90vw;
+		}
+	}
+}
+
+// Footer
+@import "footer";

@@ -1,0 +1,31 @@
+/*
+ * General
+ */
+$primary-color: #9497DD;
+
+/*
+ * Text
+ */
+$text-primary-color: #000;
+$paragraph-color   : $text-primary-color;
+$header-color      : $text-primary-color;
+$blockquote-color  : $text-primary-color;
+
+/*
+ * Forms
+ */
+
+// Labels
+$color-text-label: $text-primary-color;
+
+/*
+ * Links
+ */
+$link-color      : $text-primary-color;
+$link-color-hover: $link-color;
+$link-color-focus: $link-color-hover;
+
+/*
+ * Misc
+ */
+$border-color: #DADADA;

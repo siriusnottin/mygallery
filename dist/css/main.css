@@ -1,0 +1,407 @@
+/*!
+ * my-gallery v0.1.0
+ * One week, three photos that summarize the latest news
+ * (c) 2019 Sirius Nottin
+ * MIT License
+ * https://github.com/siriusnottin/mygallery
+ */
+
+/* line 1, src/sass/components/utils/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, src/sass/components/utils/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, src/sass/components/utils/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, src/sass/components/utils/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, src/sass/components/utils/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, src/sass/components/utils/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, src/sass/components/utils/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * General
+ */
+/*
+ * Text
+ */
+/*
+ * Forms
+ */
+/*
+ * Links
+ */
+/*
+ * Misc
+ */
+/*------------------------------------*\
+		# Type
+\*------------------------------------*/
+/* line 33, src/sass/components/_typography.scss */
+*, html, body {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 43, src/sass/components/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 36px;
+  color: #000;
+  line-height: 1.25em;
+  font-weight: 700;
+}
+
+/* line 49, src/sass/components/_typography.scss */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
+
+/* line 54, src/sass/components/_typography.scss */
+h1 {
+  font-size: 2.22222rem;
+  margin-bottom: 24px;
+}
+
+/* line 59, src/sass/components/_typography.scss */
+h2 {
+  font-size: 1.7094rem;
+  margin-bottom: 18.46154px;
+}
+
+/* line 64, src/sass/components/_typography.scss */
+h3 {
+  font-size: 1.48148rem;
+  margin-bottom: 16px;
+}
+
+/* line 69, src/sass/components/_typography.scss */
+h4 {
+  font-size: 1.30719rem;
+  margin-bottom: 14.11765px;
+}
+
+/* line 74, src/sass/components/_typography.scss */
+h5 {
+  font-size: 1.23457rem;
+  margin-bottom: 13.33333px;
+}
+
+/* line 79, src/sass/components/_typography.scss */
+h6 {
+  font-size: 1.11111rem;
+  margin-bottom: 12px;
+}
+
+/* line 85, src/sass/components/_typography.scss */
+p {
+  margin-bottom: 20px;
+  font-size: 0.88889rem;
+  line-height: 1.5em;
+  color: #000;
+}
+
+/* line 91, src/sass/components/_typography.scss */
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 1, src/sass/components/_links.scss */
+a {
+  color: #000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* line 5, src/sass/components/_links.scss */
+a:hover {
+  color: black;
+}
+
+/* line 7, src/sass/components/_base.scss */
+body {
+  display: grid;
+  background-color: #9497DD;
+}
+
+/* line 12, src/sass/components/_base.scss */
+.main-header, .gallery, .news-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 18, src/sass/components/_base.scss */
+ul,
+ol {
+  margin: 20px 0 0 20px;
+}
+
+/* line 22, src/sass/components/_base.scss */
+ul li,
+ol li {
+  margin-top: 10px;
+  line-height: 1.5em;
+  color: #000;
+}
+
+/* line 28, src/sass/components/_base.scss */
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-top: 0;
+}
+
+/* line 35, src/sass/components/_base.scss */
+ul li {
+  list-style: disc;
+}
+
+/* line 41, src/sass/components/_base.scss */
+ul ul li {
+  list-style: circle;
+}
+
+/* line 48, src/sass/components/_base.scss */
+ol li {
+  list-style: decimal;
+}
+
+/* line 54, src/sass/components/_base.scss */
+hr {
+  height: 1px;
+  margin: 30px 0;
+  border: none;
+  background-color: #DADADA;
+}
+
+/* line 62, src/sass/components/_base.scss */
+blockquote {
+  margin: 30px 0;
+  font-size: 1.27778rem;
+  line-height: 1.5em;
+  color: #000;
+  text-align: center;
+  font-style: italic;
+}
+
+/* line 73, src/sass/components/_base.scss */
+table {
+  width: 100%;
+  margin: 30px 0;
+  border-collapse: collapse;
+}
+
+/* line 79, src/sass/components/_base.scss */
+table, td, th {
+  border: 1px solid #DADADA;
+  text-align: left;
+}
+
+/* line 84, src/sass/components/_base.scss */
+th {
+  font-weight: 800;
+}
+
+/* line 88, src/sass/components/_base.scss */
+th, td {
+  padding: 15px;
+}
+
+/* line 94, src/sass/components/_base.scss */
+figure {
+  margin: 30px 0;
+}
+
+/* line 97, src/sass/components/_base.scss */
+figure img {
+  margin: 0;
+}
+
+/* line 102, src/sass/components/_base.scss */
+figcaption {
+  margin-top: 10px;
+  color: #1a1a1a;
+  font-size: 16px;
+}
+
+/* line 109, src/sass/components/_base.scss */
+pre {
+  display: block;
+  margin: 0 0 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #DADADA;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+/* line 118, src/sass/components/_base.scss */
+pre code {
+  position: static;
+  padding: 0;
+  border: none;
+  line-height: 1.5em;
+}
+
+/* line 126, src/sass/components/_base.scss */
+code {
+  position: relative;
+  top: -0.2em;
+  padding: 3px;
+  font-family: Courier New, Courier, monospace;
+  font-size: 0.74074rem;
+  color: #282828;
+  line-height: 1em;
+  pointer-events: none;
+  border: 1px solid #DADADA;
+  border-radius: 3px;
+}
+
+/* line 140, src/sass/components/_base.scss */
+em,
+i,
+.italic {
+  font-style: italic;
+}
+
+/* line 146, src/sass/components/_base.scss */
+strong,
+b,
+.bold {
+  font-weight: 800;
+}
+
+/* line 152, src/sass/components/_base.scss */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 30px 0;
+}
+
+/* line 1, src/sass/_header.scss */
+header {
+  padding: 2%;
+}
+
+/* line 4, src/sass/_header.scss */
+header .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 11, src/sass/_header.scss */
+header .center .logo img {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+/* line 18, src/sass/_header.scss */
+header .week-date {
+  font-size: 0.66667rem;
+  line-height: 1.5em;
+}
+
+/* line 8, src/sass/main.scss */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  grid-column-gap: 2%;
+}
+
+/* line 16, src/sass/main.scss */
+.gallery img:hover {
+  cursor: pointer;
+}
+
+/* line 23, src/sass/main.scss */
+#overlay {
+  background: #00000080;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* line 35, src/sass/main.scss */
+#overlay figure {
+  background: #fff;
+  padding: 2px;
+  z-index: 200;
+}
+
+/* line 40, src/sass/main.scss */
+#overlay figure img {
+  display: block;
+  max-width: 90vw;
+}
