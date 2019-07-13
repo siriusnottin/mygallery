@@ -2,6 +2,8 @@
 
 *A project inspired by the [JavaScript for WordPress Workshop 2020](https://github.com/siriusnottin/jsforwp-conf-workshop-2020).*
 
+⚠️ Do not use this code in production! Using `npm audit` will reveal vulnerabilities in a package dependency. An [issue](https://github.com/cferdinandi/gulp-boilerplate/issues/78) was opened in the [Gulp Boilerplate repository](https://github.com/cferdinandi/gulp-boilerplate/issues/78), but it's not fixed yet. After looking more in details, I think the [gulp-cssnano](https://github.com/ben-eb/gulp-cssnano) dependency should be replaced by [cssnano](https://github.com/cssnano/cssnano) but it is too complicated for me to fix it right now, with my actual knowledge of node and gulp.
+
 ## What is this
 
 One week, three photos that summarize the latest news.
